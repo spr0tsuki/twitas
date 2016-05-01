@@ -23,6 +23,8 @@ namespace twitas
         {
             switch (args.Length)
             {
+                case 0:
+                    break;
                 case 1:
                     twit_file = args[0];
                     break;
