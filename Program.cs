@@ -267,7 +267,7 @@ namespace twitas
                 var req = (HttpWebRequest)WebRequest.Create(uri);
                 req.Method = method;
                 req.AutomaticDecompression = DecompressionMethods.Deflate | DecompressionMethods.GZip;
-                req.UserAgent = "Decchi";
+                req.UserAgent = "twitas/1.0 (.NET 4.5)";
                 req.Headers.Add("Authorization", sbData.ToString());
 
                 if (method == "POST")
